@@ -1,0 +1,44 @@
+baseurl = "http://mobilefrontier.github.io/"
+title = "移动开发前线"
+languageCode = "zh-cn"
+theme = "hugo-steam-theme"
+
+# Number of posts per page
+paginate = 10
+
+[params]
+	title = "移动开发前线"
+	subtitle = "Fresh mobile development learning materials every week"
+	copyright = "Released under the MIT license."
+
+	# You can choose between green, orange, red and blue.
+	themeColor = "orange"
+
+	# Link custom assets relative to /static
+	favicon   = "favicon.ico"
+	customCSS = []
+	customJS  = []
+
+	# To provide some metadata for search engines and the about section in the footer
+	# feel free to add a few information about you and your website.
+	name = "pockry"
+	bio = "programmer - blogger - coffee aficionado"
+	description = "移动开发每周阅读清单，由移动开发前线微信公众号提供。"
+	
+	# Link your social networks (optional)
+	location = ""
+	twitter = ""
+	weibo = "bornmobile"
+	linkedin = ""
+	googleplus = ""
+	facebook = ""
+	instagram = ""
+	github = "mobilefrontier"
+	gitlab = ""
+	bitbucket = ""
+
+	# Customize or translate the strings
+	keepReadingStr = "继续阅读"
+	backtotopStr = "Back to top"
+	shareStr = "Share"
+	pageNotFoundTitle = "404 - Page not found"
