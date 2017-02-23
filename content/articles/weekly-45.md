@@ -113,6 +113,7 @@ Android中虽然可以通过设置Thread.setDefaultUncaughtExceptionHandler来�
 
 ## 活动
 
+
 > 宣传社区办的一些移动相关的线下活动，有想放在这里的欢迎和我打招呼，友情帮宣传。
 
 [GMTC 2017全球移动技术大会](http://gmtc.geekbang.org/?utm_source=infoq&utm_campaign=bornmobile&utm_medium=wechat)
