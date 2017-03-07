@@ -45,9 +45,9 @@ Apple CEO Tim Cook 不止一次在公开场合表示过，Apple 一直在 AR 领
 
 所谓冷启动就是启动应用时，后台没有该应用的进程，此时系统会创建一个进程分配给它(AMS通过Socket和Zygote通信，Zygote通过forkAndSpecialize()方法向Linux内核申请新进程)，之后会创建和初始化Application，然后通过反射执行ActivityThread中的main方法。本文结合源码，详细分析了应用冷启动的过程。
 
-[Android架构那些事之第三方库的隔离](http://www.jianshu.com/p/d959250e0624)
+[浅谈Android Hook技术](https://sec.xiaomi.com/article/23)
 
-我们在开发的过程中会不可避免的引用一些第三方库，比如网络请求库、图片加载库等等。就拿图片加载库来说，程序中不会只有一个地方来引用到此库，可能有N个类会用到此库来显示图片。这种情况下，就可以通过一个中间层来引用“第三方图片加载库”。这样做的好处是不管第三方图片加载库换成Picasso还是Glide，只需改变中间层，其他的一行代码都不需要改动。阅读文章，了解详细方案。
+xposed是阿里开源的框架，xposed通过替换`/system/bin/app_process`程序控制zygote进程，使得`app_process`在启动过程中会加载`XposedBridge.jar`这个jar包，从而完成对Zygote进程及其创建的Dalvik虚拟机的劫持。Frida是一款基于python+javascript的hook框架，通杀Android\iOS\linux\win\osx等各平台，由于是基于脚本的交互，因此相比xposed和substrace cydia更加便捷，本文介绍两个框架在Android下面的使用。
 
 [Android LayoutInflater源码解析](http://allenfeng.com/2017/02/24/how-android-layout-inflater-work/)
 
